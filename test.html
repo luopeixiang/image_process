@@ -1,0 +1,1452 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>土地证审核</title>
+          <link href="css/sequence-theme.two-up.css" rel="stylesheet" media="all">
+          <!--[if lt IE 9]>
+            <link href="css/sequence-theme.two-up-ie8.css" rel="stylesheet" media="all">
+          <![endif]-->
+          <style>
+            body {
+              margin: 0;
+              padding: 0;
+            }
+          </style>
+        </head>
+        <body>
+
+          <div id="sequence" class="seq">
+
+            <div class="seq-nav">
+
+
+
+              <button class="seq-next seq-swipe" type="button" aria-label="Next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21.5" viewBox="30.4 23.7 20 21.5" enable-background="new 30.4 23.7 20 21.5" role="img" aria-labelledby="title-swipe-icon"><title id="title-swipe-icon">Swipe Icon</title><path d="M33 23.7c-.1 0-.3.1-.4.2l-2.1 2.1c-.2.2-.2.6 0 .9l2.1 2.1c.2.2.6.2.9 0s.2-.6 0-.9l-1.1-1.1h5.2c.3 0 .6-.3.6-.6s-.3-.6-.6-.6h-5.2l1.1-1.1c.2-.2.3-.6 0-.9-.1-.1-.2-.1-.5-.1zm14.6 0c-.3 0-.6.3-.6.7 0 .1.1.3.2.4l1.1 1.1h-5.2c-.3 0-.6.3-.6.6s.2.5.6.5h5.2l-1.1 1.1c-.2.2-.2.6 0 .9s.6.2.9 0l2.1-2.1c.2-.2.2-.6 0-.9l-2.1-2.1c-.2-.2-.3-.2-.5-.2zm-7.3 1.3c-.8 0-1.4.6-1.4 1.4v8.8c-.5-.6-1.1-1.3-1.6-1.6-.3-.2-.7-.4-1.1-.4-.7 0-1.2.5-1.3 1.2-.1.8.4 1.6.8 2.2l1.5 2.4 1.2 1.9c.6 1 .7 1.8.7 2.9v1.2c0 .1.1.2.2.2h8.2c.1 0 .2-.1.2-.2.1-.8.2-1.6.4-2.4.7-2 1.3-3.9 1.3-6.4v-4c0-.8-.6-1.4-1.4-1.4-.4 0-.7.1-1.2.6 0-.8-.6-1.4-1.4-1.4-.5 0-.9.2-1.2.6-.1-.7-.7-1.2-1.4-1.2-.5 0-.9.2-1.2.6v-3.5c.2-.8-.5-1.5-1.3-1.5z"/></svg>
+              </button>
+            </div>
+
+            <button class="seq-next-button seq-next" type="button" aria-label="Next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="16.1 -0.7 60 60" enable-background="new 16.1 -0.7 60 60" role="img" aria-labelledby="title-down-arrow"><title id="title-down-arrow">Down/Next Arrow</title><path d="M46.407 1.399l27.435 27.435-28.213 28.213-27.435-27.435z"/><path fill="#fff" d="M46.1 59.3l-30-30 30-30 30 30-30 30zm-22.9-30l22.9 22.9 22.9-22.9-22.9-22.9-22.9 22.9zM39.278 23.872l11.031 11.031-4.172 4.172-11.031-11.031zM57.172 28.079l-11.031 11.031-4.172-4.172 11.031-11.031z"/></svg>
+            </button>
+
+            <div class="seq-screen">
+              <ul class="seq-canvas">
+            <li class="step1">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720710/DKSYT350181007207100009J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：1/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：陈存福</h3>
+                          <h3 id="">承包方编码：350181007207100009</h3>
+                          <h3>承包地块总数：2块</h3>
+                          <h3>承包地块总面积：1.05亩</h3>
+                          <h3>标记信息：<span id="350181007207100009" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207100009')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step2">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720710/DKSYT350181007207100036J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：2/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：陈水炎</h3>
+                          <h3 id="">承包方编码：350181007207100036</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：1.65亩</h3>
+                          <h3>标记信息：<span id="350181007207100036" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207100036')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step3">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720710/DKSYT350181007207100028J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：3/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：周妹妹</h3>
+                          <h3 id="">承包方编码：350181007207100028</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：2.11亩</h3>
+                          <h3>标记信息：<span id="350181007207100028" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207100028')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step4">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720710/DKSYT350181007207100031J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：4/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：陈孝勇</h3>
+                          <h3 id="">承包方编码：350181007207100031</h3>
+                          <h3>承包地块总数：12块</h3>
+                          <h3>承包地块总面积：3.49亩</h3>
+                          <h3>标记信息：<span id="350181007207100031" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207100031')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step5">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720622/DKSYT350181007206220005J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：5/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：刘文义</h3>
+                          <h3 id="">承包方编码：350181007206220005</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：1.79亩</h3>
+                          <h3>标记信息：<span id="350181007206220005" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206220005')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step6">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720621/DKSYT350181007206210018J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：6/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：徐进美</h3>
+                          <h3 id="">承包方编码：350181007206210018</h3>
+                          <h3>承包地块总数：2块</h3>
+                          <h3>承包地块总面积：0.78亩</h3>
+                          <h3>标记信息：<span id="350181007206210018" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206210018')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step7">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720602/DKSYT350181007206020006J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：7/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄书程</h3>
+                          <h3 id="">承包方编码：350181007206020006</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：3.49亩</h3>
+                          <h3>标记信息：<span id="350181007206020006" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206020006')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step8">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720602/DKSYT350181007206020016J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：8/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄书勇</h3>
+                          <h3 id="">承包方编码：350181007206020016</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：2.55亩</h3>
+                          <h3>标记信息：<span id="350181007206020016" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206020016')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step9">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720204/DKSYT350181007202040010J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：9/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：沈武淮</h3>
+                          <h3 id="">承包方编码：350181007202040010</h3>
+                          <h3>承包地块总数：11块</h3>
+                          <h3>承包地块总面积：5.23亩</h3>
+                          <h3>标记信息：<span id="350181007202040010" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007202040010')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step10">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720204/DKSYT350181007202040018J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：10/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：沈武钏</h3>
+                          <h3 id="">承包方编码：350181007202040018</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：4.55亩</h3>
+                          <h3>标记信息：<span id="350181007202040018" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007202040018')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step11">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720204/DKSYT350181007202040007J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：11/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：沈武瑞</h3>
+                          <h3 id="">承包方编码：350181007202040007</h3>
+                          <h3>承包地块总数：7块</h3>
+                          <h3>承包地块总面积：4.41亩</h3>
+                          <h3>标记信息：<span id="350181007202040007" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007202040007')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step12">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720204/DKSYT350181007202040011J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：12/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：沈祖耀</h3>
+                          <h3 id="">承包方编码：350181007202040011</h3>
+                          <h3>承包地块总数：9块</h3>
+                          <h3>承包地块总面积：3.6亩</h3>
+                          <h3>标记信息：<span id="350181007202040011" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007202040011')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step13">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720806/DKSYT350181007208060013J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：13/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：俞亦松</h3>
+                          <h3 id="">承包方编码：350181007208060013</h3>
+                          <h3>承包地块总数：11块</h3>
+                          <h3>承包地块总面积：3.38亩</h3>
+                          <h3>标记信息：<span id="350181007208060013" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007208060013')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step14">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720806/DKSYT350181007208060003J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：14/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：张宝清</h3>
+                          <h3 id="">承包方编码：350181007208060003</h3>
+                          <h3>承包地块总数：14块</h3>
+                          <h3>承包地块总面积：2.56亩</h3>
+                          <h3>标记信息：<span id="350181007208060003" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007208060003')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step15">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720806/DKSYT350181007208060006J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：15/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：张光荣</h3>
+                          <h3 id="">承包方编码：350181007208060006</h3>
+                          <h3>承包地块总数：9块</h3>
+                          <h3>承包地块总面积：2.18亩</h3>
+                          <h3>标记信息：<span id="350181007208060006" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007208060006')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step16">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720201/DKSYT350181007202010003J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：16/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：刘泉妹</h3>
+                          <h3 id="">承包方编码：350181007202010003</h3>
+                          <h3>承包地块总数：7块</h3>
+                          <h3>承包地块总面积：4.14亩</h3>
+                          <h3>标记信息：<span id="350181007202010003" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007202010003')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step17">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720201/DKSYT350181007202010013J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：17/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄霞</h3>
+                          <h3 id="">承包方编码：350181007202010013</h3>
+                          <h3>承包地块总数：7块</h3>
+                          <h3>承包地块总面积：4.36亩</h3>
+                          <h3>标记信息：<span id="350181007202010013" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007202010013')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step18">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720201/DKSYT350181007202010017J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：18/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄焰斌</h3>
+                          <h3 id="">承包方编码：350181007202010017</h3>
+                          <h3>承包地块总数：9块</h3>
+                          <h3>承包地块总面积：7.3亩</h3>
+                          <h3>标记信息：<span id="350181007202010017" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007202010017')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step19">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720201/DKSYT350181007202010011J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：19/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄徽梨</h3>
+                          <h3 id="">承包方编码：350181007202010011</h3>
+                          <h3>承包地块总数：16块</h3>
+                          <h3>承包地块总面积：13.0亩</h3>
+                          <h3>标记信息：<span id="350181007202010011" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007202010011')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step20">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720201/DKSYT350181007202010011J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：20/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄徽梨</h3>
+                          <h3 id="">承包方编码：350181007202010011</h3>
+                          <h3>承包地块总数：16块</h3>
+                          <h3>承包地块总面积：13.0亩</h3>
+                          <h3>标记信息：<span id="350181007202010011" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007202010011')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step21">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720201/DKSYT350181007202010024J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：21/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄徽文</h3>
+                          <h3 id="">承包方编码：350181007202010024</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：7.87亩</h3>
+                          <h3>标记信息：<span id="350181007202010024" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007202010024')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step22">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720814/DKSYT350181007208140013J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：22/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄君和</h3>
+                          <h3 id="">承包方编码：350181007208140013</h3>
+                          <h3>承包地块总数：9块</h3>
+                          <h3>承包地块总面积：2.41亩</h3>
+                          <h3>标记信息：<span id="350181007208140013" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007208140013')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step23">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720814/DKSYT350181007208140016J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：23/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄君农</h3>
+                          <h3 id="">承包方编码：350181007208140016</h3>
+                          <h3>承包地块总数：10块</h3>
+                          <h3>承包地块总面积：6.37亩</h3>
+                          <h3>标记信息：<span id="350181007208140016" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007208140016')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step24">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720814/DKSYT350181007208140029J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：24/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄水莲</h3>
+                          <h3 id="">承包方编码：350181007208140029</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：3.44亩</h3>
+                          <h3>标记信息：<span id="350181007208140029" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007208140029')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step25">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720601/DKSYT350181007206010030J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：25/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄书坤</h3>
+                          <h3 id="">承包方编码：350181007206010030</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：2.39亩</h3>
+                          <h3>标记信息：<span id="350181007206010030" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206010030')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step26">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720619/DKSYT350181007206190022J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：26/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：俞金水</h3>
+                          <h3 id="">承包方编码：350181007206190022</h3>
+                          <h3>承包地块总数：14块</h3>
+                          <h3>承包地块总面积：3.68亩</h3>
+                          <h3>标记信息：<span id="350181007206190022" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206190022')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step27">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720619/DKSYT350181007206190042J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：27/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：施木兴</h3>
+                          <h3 id="">承包方编码：350181007206190042</h3>
+                          <h3>承包地块总数：9块</h3>
+                          <h3>承包地块总面积：2.03亩</h3>
+                          <h3>标记信息：<span id="350181007206190042" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206190042')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step28">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720604/DKSYT350181007206040034J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：28/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：翁绳清</h3>
+                          <h3 id="">承包方编码：350181007206040034</h3>
+                          <h3>承包地块总数：10块</h3>
+                          <h3>承包地块总面积：1.65亩</h3>
+                          <h3>标记信息：<span id="350181007206040034" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206040034')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step29">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720608/DKSYT350181007206080008J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：29/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：王贻铭</h3>
+                          <h3 id="">承包方编码：350181007206080008</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：2.51亩</h3>
+                          <h3>标记信息：<span id="350181007206080008" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206080008')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step30">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720608/DKSYT350181007206080012J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：30/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：王贻法</h3>
+                          <h3 id="">承包方编码：350181007206080012</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：3.06亩</h3>
+                          <h3>标记信息：<span id="350181007206080012" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206080012')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step31">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720603/DKSYT350181007206030058J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：31/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：张建云</h3>
+                          <h3 id="">承包方编码：350181007206030058</h3>
+                          <h3>承包地块总数：1块</h3>
+                          <h3>承包地块总面积：0.78亩</h3>
+                          <h3>标记信息：<span id="350181007206030058" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206030058')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step32">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720603/DKSYT350181007206030008J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：32/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：郑孝耿</h3>
+                          <h3 id="">承包方编码：350181007206030008</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：3.23亩</h3>
+                          <h3>标记信息：<span id="350181007206030008" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206030008')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step33">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720405/DKSYT350181007204050009J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：33/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：李为旺</h3>
+                          <h3 id="">承包方编码：350181007204050009</h3>
+                          <h3>承包地块总数：9块</h3>
+                          <h3>承包地块总面积：6.51亩</h3>
+                          <h3>标记信息：<span id="350181007204050009" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204050009')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step34">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720405/DKSYT350181007204050014J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：34/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：林瑞建</h3>
+                          <h3 id="">承包方编码：350181007204050014</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：6.23亩</h3>
+                          <h3>标记信息：<span id="350181007204050014" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204050014')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step35">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720405/DKSYT350181007204050016J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：35/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：许昌平</h3>
+                          <h3 id="">承包方编码：350181007204050016</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：5.47亩</h3>
+                          <h3>标记信息：<span id="350181007204050016" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204050016')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step36">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720605/DKSYT350181007206050017J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：36/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：李贻祥</h3>
+                          <h3 id="">承包方编码：350181007206050017</h3>
+                          <h3>承包地块总数：10块</h3>
+                          <h3>承包地块总面积：3.92亩</h3>
+                          <h3>标记信息：<span id="350181007206050017" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206050017')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step37">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720209/DKSYT350181007202090007J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：37/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：戴遵金</h3>
+                          <h3 id="">承包方编码：350181007202090007</h3>
+                          <h3>承包地块总数：2块</h3>
+                          <h3>承包地块总面积：1.1亩</h3>
+                          <h3>标记信息：<span id="350181007202090007" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007202090007')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step38">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720609/DKSYT350181007206090021J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：38/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：王贻枝</h3>
+                          <h3 id="">承包方编码：350181007206090021</h3>
+                          <h3>承包地块总数：10块</h3>
+                          <h3>承包地块总面积：5.04亩</h3>
+                          <h3>标记信息：<span id="350181007206090021" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206090021')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step39">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720609/DKSYT350181007206090002J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：39/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：马金福</h3>
+                          <h3 id="">承包方编码：350181007206090002</h3>
+                          <h3>承包地块总数：9块</h3>
+                          <h3>承包地块总面积：3.13亩</h3>
+                          <h3>标记信息：<span id="350181007206090002" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206090002')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step40">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720609/DKSYT350181007206090038J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：40/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：王鹏</h3>
+                          <h3 id="">承包方编码：350181007206090038</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：2.97亩</h3>
+                          <h3>标记信息：<span id="350181007206090038" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206090038')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step41">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720704/DKSYT350181007207040012J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：41/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：许祯祥</h3>
+                          <h3 id="">承包方编码：350181007207040012</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：1.2亩</h3>
+                          <h3>标记信息：<span id="350181007207040012" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207040012')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step42">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720704/DKSYT350181007207040013J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：42/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：许祥强</h3>
+                          <h3 id="">承包方编码：350181007207040013</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：2.83亩</h3>
+                          <h3>标记信息：<span id="350181007207040013" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207040013')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step43">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720706/DKSYT350181007207060005J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：43/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：洪礼福</h3>
+                          <h3 id="">承包方编码：350181007207060005</h3>
+                          <h3>承包地块总数：4块</h3>
+                          <h3>承包地块总面积：1.71亩</h3>
+                          <h3>标记信息：<span id="350181007207060005" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207060005')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step44">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720706/DKSYT350181007207060014J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：44/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：洪礼润</h3>
+                          <h3 id="">承包方编码：350181007207060014</h3>
+                          <h3>承包地块总数：2块</h3>
+                          <h3>承包地块总面积：1.08亩</h3>
+                          <h3>标记信息：<span id="350181007207060014" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207060014')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step45">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720709/DKSYT350181007207090001J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：45/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：洪孝珠</h3>
+                          <h3 id="">承包方编码：350181007207090001</h3>
+                          <h3>承包地块总数：3块</h3>
+                          <h3>承包地块总面积：1.04亩</h3>
+                          <h3>标记信息：<span id="350181007207090001" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207090001')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step46">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720709/DKSYT350181007207090015J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：46/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：洪孝钟</h3>
+                          <h3 id="">承包方编码：350181007207090015</h3>
+                          <h3>承包地块总数：1块</h3>
+                          <h3>承包地块总面积：1.06亩</h3>
+                          <h3>标记信息：<span id="350181007207090015" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207090015')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step47">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720709/DKSYT350181007207090009J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：47/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：洪爱英</h3>
+                          <h3 id="">承包方编码：350181007207090009</h3>
+                          <h3>承包地块总数：3块</h3>
+                          <h3>承包地块总面积：1.19亩</h3>
+                          <h3>标记信息：<span id="350181007207090009" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207090009')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step48">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720403/DKSYT350181007204030013J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：48/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：王存寿</h3>
+                          <h3 id="">承包方编码：350181007204030013</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：8.99亩</h3>
+                          <h3>标记信息：<span id="350181007204030013" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204030013')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step49">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720403/DKSYT350181007204030010J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：49/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：林华瑞</h3>
+                          <h3 id="">承包方编码：350181007204030010</h3>
+                          <h3>承包地块总数：10块</h3>
+                          <h3>承包地块总面积：5.9亩</h3>
+                          <h3>标记信息：<span id="350181007204030010" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204030010')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step50">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720403/DKSYT350181007204030009J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：50/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：王存彬</h3>
+                          <h3 id="">承包方编码：350181007204030009</h3>
+                          <h3>承包地块总数：7块</h3>
+                          <h3>承包地块总面积：4.71亩</h3>
+                          <h3>标记信息：<span id="350181007204030009" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204030009')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step51">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720403/DKSYT350181007204030002J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：51/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：李炎清</h3>
+                          <h3 id="">承包方编码：350181007204030002</h3>
+                          <h3>承包地块总数：12块</h3>
+                          <h3>承包地块总面积：6.75亩</h3>
+                          <h3>标记信息：<span id="350181007204030002" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204030002')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step52">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720403/DKSYT350181007204030004J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：52/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：王存仁</h3>
+                          <h3 id="">承包方编码：350181007204030004</h3>
+                          <h3>承包地块总数：10块</h3>
+                          <h3>承包地块总面积：7.33亩</h3>
+                          <h3>标记信息：<span id="350181007204030004" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204030004')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step53">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720403/DKSYT350181007204030011J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：53/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：王德琛</h3>
+                          <h3 id="">承包方编码：350181007204030011</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：3.44亩</h3>
+                          <h3>标记信息：<span id="350181007204030011" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204030011')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step54">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720403/DKSYT350181007204030006J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：54/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：王木春</h3>
+                          <h3 id="">承包方编码：350181007204030006</h3>
+                          <h3>承包地块总数：9块</h3>
+                          <h3>承包地块总面积：3.59亩</h3>
+                          <h3>标记信息：<span id="350181007204030006" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204030006')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step55">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720403/DKSYT350181007204030008J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：55/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄秋金</h3>
+                          <h3 id="">承包方编码：350181007204030008</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：7.69亩</h3>
+                          <h3>标记信息：<span id="350181007204030008" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204030008')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step56">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720403/DKSYT350181007204030007J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：56/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄梅官</h3>
+                          <h3 id="">承包方编码：350181007204030007</h3>
+                          <h3>承包地块总数：9块</h3>
+                          <h3>承包地块总面积：4.48亩</h3>
+                          <h3>标记信息：<span id="350181007204030007" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204030007')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step57">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720707/DKSYT350181007207070008J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：57/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：洪孝文</h3>
+                          <h3 id="">承包方编码：350181007207070008</h3>
+                          <h3>承包地块总数：2块</h3>
+                          <h3>承包地块总面积：1.05亩</h3>
+                          <h3>标记信息：<span id="350181007207070008" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207070008')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step58">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720707/DKSYT350181007207070013J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：58/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：洪子凎</h3>
+                          <h3 id="">承包方编码：350181007207070013</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：2.74亩</h3>
+                          <h3>标记信息：<span id="350181007207070013" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207070013')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step59">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720707/DKSYT350181007207070015J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：59/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：洪孝玉</h3>
+                          <h3 id="">承包方编码：350181007207070015</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：2.54亩</h3>
+                          <h3>标记信息：<span id="350181007207070015" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207070015')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step60">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720707/DKSYT350181007207070009J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：60/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：洪晓锋</h3>
+                          <h3 id="">承包方编码：350181007207070009</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：3.37亩</h3>
+                          <h3>标记信息：<span id="350181007207070009" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207070009')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step61">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720707/DKSYT350181007207070018J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：61/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：洪孝程</h3>
+                          <h3 id="">承包方编码：350181007207070018</h3>
+                          <h3>承包地块总数：9块</h3>
+                          <h3>承包地块总面积：3.16亩</h3>
+                          <h3>标记信息：<span id="350181007207070018" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207070018')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step62">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720805/DKSYT350181007208050008J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：62/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：张祖油</h3>
+                          <h3 id="">承包方编码：350181007208050008</h3>
+                          <h3>承包地块总数：10块</h3>
+                          <h3>承包地块总面积：2.51亩</h3>
+                          <h3>标记信息：<span id="350181007208050008" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007208050008')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step63">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720805/DKSYT350181007208050026J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：63/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：张祖腾</h3>
+                          <h3 id="">承包方编码：350181007208050026</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：1.96亩</h3>
+                          <h3>标记信息：<span id="350181007208050026" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007208050026')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step64">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720618/DKSYT350181007206180016J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：64/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：王贤培</h3>
+                          <h3 id="">承包方编码：350181007206180016</h3>
+                          <h3>承包地块总数：5块</h3>
+                          <h3>承包地块总面积：1.77亩</h3>
+                          <h3>标记信息：<span id="350181007206180016" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206180016')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step65">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720705/DKSYT350181007207050050J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：65/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：陈明德</h3>
+                          <h3 id="">承包方编码：350181007207050050</h3>
+                          <h3>承包地块总数：9块</h3>
+                          <h3>承包地块总面积：2.07亩</h3>
+                          <h3>标记信息：<span id="350181007207050050" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207050050')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step66">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720705/DKSYT350181007207050001J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：66/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：许祯香</h3>
+                          <h3 id="">承包方编码：350181007207050001</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：2.05亩</h3>
+                          <h3>标记信息：<span id="350181007207050001" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207050001')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step67">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720613/DKSYT350181007206130018J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：67/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：林鸿彪</h3>
+                          <h3 id="">承包方编码：350181007206130018</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：2.52亩</h3>
+                          <h3>标记信息：<span id="350181007206130018" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206130018')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step68">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720801/DKSYT350181007208010013J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：68/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：董宝兴</h3>
+                          <h3 id="">承包方编码：350181007208010013</h3>
+                          <h3>承包地块总数：4块</h3>
+                          <h3>承包地块总面积：2.37亩</h3>
+                          <h3>标记信息：<span id="350181007208010013" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007208010013')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step69">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720620/DKSYT350181007206200020J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：69/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：俞龙泉</h3>
+                          <h3 id="">承包方编码：350181007206200020</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：3.79亩</h3>
+                          <h3>标记信息：<span id="350181007206200020" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206200020')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step70">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720402/DKSYT350181007204020020J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：70/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：曾国基</h3>
+                          <h3 id="">承包方编码：350181007204020020</h3>
+                          <h3>承包地块总数：6块</h3>
+                          <h3>承包地块总面积：5.97亩</h3>
+                          <h3>标记信息：<span id="350181007204020020" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204020020')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step71">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720402/DKSYT350181007204020030J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：71/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：曾焕平</h3>
+                          <h3 id="">承包方编码：350181007204020030</h3>
+                          <h3>承包地块总数：1块</h3>
+                          <h3>承包地块总面积：0.78亩</h3>
+                          <h3>标记信息：<span id="350181007204020030" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204020030')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step72">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720606/DKSYT350181007206060013J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：72/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：曾爱芳</h3>
+                          <h3 id="">承包方编码：350181007206060013</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：2.04亩</h3>
+                          <h3>标记信息：<span id="350181007206060013" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206060013')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step73">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720623/DKSYT350181007206230007J2.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：73/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：黄种华</h3>
+                          <h3 id="">承包方编码：350181007206230007</h3>
+                          <h3>承包地块总数：11块</h3>
+                          <h3>承包地块总面积：5.99亩</h3>
+                          <h3>标记信息：<span id="350181007206230007" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206230007')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step74">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720404/DKSYT350181007204040019J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：74/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：杨孝仁</h3>
+                          <h3 id="">承包方编码：350181007204040019</h3>
+                          <h3>承包地块总数：8块</h3>
+                          <h3>承包地块总面积：5.22亩</h3>
+                          <h3>标记信息：<span id="350181007204040019" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204040019')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step75">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720404/DKSYT350181007204040001J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：75/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：陈建发</h3>
+                          <h3 id="">承包方编码：350181007204040001</h3>
+                          <h3>承包地块总数：4块</h3>
+                          <h3>承包地块总面积：10.14亩</h3>
+                          <h3>标记信息：<span id="350181007204040001" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204040001')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step76">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720404/DKSYT350181007204040013J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：76/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：陈发兴</h3>
+                          <h3 id="">承包方编码：350181007204040013</h3>
+                          <h3>承包地块总数：4块</h3>
+                          <h3>承包地块总面积：7.52亩</h3>
+                          <h3>标记信息：<span id="350181007204040013" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007204040013')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step77">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720207/DKSYT350181007202070005J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：77/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：张宗仁</h3>
+                          <h3 id="">承包方编码：350181007202070005</h3>
+                          <h3>承包地块总数：4块</h3>
+                          <h3>承包地块总面积：4.1亩</h3>
+                          <h3>标记信息：<span id="350181007202070005" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007202070005')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step78">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720708/DKSYT350181007207080017J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：78/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：洪春金</h3>
+                          <h3 id="">承包方编码：350181007207080017</h3>
+                          <h3>承包地块总数：1块</h3>
+                          <h3>承包地块总面积：0.65亩</h3>
+                          <h3>标记信息：<span id="350181007207080017" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007207080017')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step79">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720302/DKSYT350181007203020013J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：79/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：罗信枢</h3>
+                          <h3 id="">承包方编码：350181007203020013</h3>
+                          <h3>承包地块总数：1块</h3>
+                          <h3>承包地块总面积：1.1亩</h3>
+                          <h3>标记信息：<span id="350181007203020013" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007203020013')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li><li class="step80">
+                        <div data-seq class="seq-feature seq-half">
+                          <img src="file:///home/luo/tudi_images/35018100720611/DKSYT350181007206110025J1.jpg" width="250%" height="100%" alt="A close-up of green fern leaves" />
+                        </div>
+                        <div data-seq class="seq-content seq-half seq-valign">
+                        <div>
+                          <h2>进度：80/80</h2>
+                          <h2>正确信息</h2>
+                          <h3>承包方（代表）姓名：施恭兴</h3>
+                          <h3 id="">承包方编码：350181007206110025</h3>
+                          <h3>承包地块总数：3块</h3>
+                          <h3>承包地块总面积：0.74亩</h3>
+                          <h3>标记信息：<span id="350181007206110025" style="background-color:MediumSeaGreen;">正确</span></h3>
+                          <button class="seq-button" onclick="tag('350181007206110025')">切换标记</button>
+                          <button class="seq-button" onclick="export_csv()">导出已标错误编号</button>
+                        </div>
+                        </div>
+                        </li>
+        </ul>
+            </div>
+
+            </div>
+
+            <script src="scripts/imagesloaded.pkgd.min.js"></script>
+            <script src="scripts/hammer.min.js"></script>
+            <script src="scripts/sequence.min.js"></script>
+            <script src="scripts/sequence-theme.two-up.js"></script>
+            <script>
+            errors = Array();
+            function tag(code){
+              var ob = document.getElementById(code);
+              var info = ob.innerHTML;
+              if(info == "错误"){
+                ob.innerHTML = "正确";
+                ob.style['background-color'] = 'MediumSeaGreen';
+                var index = errors.indexOf(code);
+                if(index > -1){
+                  errors.splice(index,1);
+
+                }
+              }
+              else{
+                ob.innerHTML = "错误";
+                ob.style['background-color'] = 'red';
+                errors.push(code);
+
+
+              }
+
+
+
+            };
+
+            function export_csv(){
+              let csvContent = "data:text/csv;charset=utf-8,";
+              for(var i=0;i<errors.length;i++){
+                errors[i] = '#'+errors[i];
+              }
+              csvContent += errors.join('\r\n');
+              var encodedUri = encodeURI(csvContent);
+              var link = document.createElement("a");
+              link.setAttribute("href", encodedUri);
+              link.setAttribute("download", "错误编号.csv");
+              link.innerHTML= "Click Here to download";
+              document.body.appendChild(link); // Required for FF
+
+              link.click(); // This will download the data file named "my_data.csv".
+            }
+            </script>
+
+            </body>
+            </html>
